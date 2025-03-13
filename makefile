@@ -48,6 +48,7 @@ endef
 	$(call add_gdb, "i r al")
 	$(call add_gdb, "i r bl")
 	$(call add_gdb, "i r cl")
+	$(call add_gdb, "x/ub &val")
 	$(call add_gdb, "i r rdx")
 	${call quit}
 	$(call dispose, 01-addressing-modes)
